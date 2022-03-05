@@ -8,6 +8,6 @@ function a(arg)
 
 function hello()
 {
-  console.log("Hello wolrd");
+  console.log("Hello wolrdd");
 }
 a(hello);
