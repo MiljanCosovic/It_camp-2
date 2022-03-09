@@ -57,7 +57,7 @@ async function getData()
     const res=await fetch("https://jsonplaceholder.typicode.com/users");
     const resJson=await res.json()
     const name= resJson.map((el) =>{
-      return el.name;
+      return {name: el.name};
     })
     console.log(name);
     
