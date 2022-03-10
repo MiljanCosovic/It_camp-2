@@ -44,27 +44,30 @@
 
 
 
-
-
-
-
-
-
-async function getData()
-{
-  try
-  {
-    const res=await fetch("https://jsonplaceholder.typicode.com/users");
-    const resJson=await res.json()
-    const name= resJson.map((el) =>{
-      return {name: el.name};
-    })
-    console.log(name);
+// async function getData()
+// {
+//   try
+//   {
+//     const res=await fetch("https://jsonplaceholder.typicode.com/users");
+//     const resJson=await res.json()
+//     const name= resJson.map((el) =>{
+//       return {name: el.name};
+//     })
+//     console.log(name);
     
-  }catch(err)
-  {
-    console.log("Problem sa serverom");
-  }
-}
+//   }catch(err)
+//   {
+//     console.log("Problem sa serverom");
+//   }
+// }
 
-getData()
+// getData()
+
+var novi = document.createElement('div');
+var container1=document.getElementById("container") 
+novi.style.border='1px solid black';
+novi.style.width='300px';
+novi.style.height='300px';
+novi.style.backgroundColor='red';
+container1.appendChild(novi);
+
