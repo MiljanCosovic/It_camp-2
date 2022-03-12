@@ -104,7 +104,7 @@ fetch("https://catfact.ninja/facts")
     ctr.appendChild(generateCard(res.data[i]))
   }
 })
-.catch((err) =>{
-  console.log(err);
+.catch((error) =>{
+  console.log(error);
 })
 
