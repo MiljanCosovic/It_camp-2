@@ -95,7 +95,7 @@ ctr.style.flexWrap='wrap';
 
 
 fetch("https://catfact.ninja/facts")
-.then((res) =>{
+.then((res) => {
   return res.json();
 })
 .then((res) =>{
