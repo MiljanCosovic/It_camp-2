@@ -75,13 +75,28 @@
 // container1.appendChild(novi);
 
 
+function pageNav(vals)
+{
+  let nav=document.createElement('a');
+  nav.href = vals.url ?? "";
+  nav.innerHTML=vals.label
+  if(vals.active)
+  {
+    nav.style.backgroundColor='white'
+  }
+  return nav
+}
+
+
+
+
 function generateCard(vals)
 {
   var subEl=document.createElement('div');
   subEl.style.backgroundColor='green';
   subEl.style.border='1 px solid black';
   subEl.style.width='300px';
-  subEl.style.height='400px';
+  subEl.style.height='200px';
   subEl.style.margin='10px';
   subEl.innerHTML=vals.fact;
   return subEl
@@ -94,7 +109,14 @@ ctr.style.justifyContent='flex-start';
 ctr.style.flexWrap='wrap';
 
 
-fetch("https://catfact.ninja/facts")
+var pagintationCtr = document.getElementById("pagination-container");
+
+
+var fetchLink="https://catfact.ninja/facts"
+
+
+
+fetch(fetchLink)
 .then((res) => {
   return res.json();
 })
@@ -103,8 +125,38 @@ fetch("https://catfact.ninja/facts")
   {
     ctr.appendChild(generateCard(res.data[i]))
   }
+  
+  for(i=0;i<res.links.length;i++)
+  {
+    pagintationCtr.appendChild(
+      pageNav(res.links[i])
+    )
+  }
 })
+
+
+
+
 .catch((error) =>{
   console.log(error);
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
