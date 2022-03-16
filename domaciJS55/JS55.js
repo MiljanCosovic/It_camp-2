@@ -133,10 +133,6 @@ fetch(fetchLink)
     )
   }
 })
-
-
-
-
 .catch((error) =>{
   console.log(error);
 })
