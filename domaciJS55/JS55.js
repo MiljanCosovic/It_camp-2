@@ -78,11 +78,21 @@
 function pageNav(vals)
 {
   let nav=document.createElement('a');
-  nav.href = vals.url ?? "";
   nav.innerHTML=vals.label
   if(vals.active)
   {
     nav.style.backgroundColor='white'
+  }
+  if(!vals.url)
+  {
+    nav.classList.add("disabled-href")
+  }
+  nav.onclick = function (e)
+  {
+    e.preventDefault()
+
+    fetchLink=vals.url
+    fetchData()
   }
   return nav
 }
@@ -115,16 +125,21 @@ var pagintationCtr = document.getElementById("pagination-container");
 var fetchLink="https://catfact.ninja/facts"
 
 
+function fetchData()
+{
 
 fetch(fetchLink)
 .then((res) => {
   return res.json();
 })
 .then((res) =>{
+  ctr.innerHTML=''
   for(let i=0; i<res.data.length;i++)
   {
     ctr.appendChild(generateCard(res.data[i]))
   }
+
+  pagintationCtr.innerHTML=""
   
   for(i=0;i<res.links.length;i++)
   {
@@ -136,10 +151,9 @@ fetch(fetchLink)
 .catch((error) =>{
   console.log(error);
 })
+}
 
-
-
-
+fetchData()
 
 
 
