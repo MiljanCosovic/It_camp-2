@@ -153,7 +153,7 @@ fetch(fetchLink)
 })
 }
 
-fetchData()
+fetchData();
 
 
 
