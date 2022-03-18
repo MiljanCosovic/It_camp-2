@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    
+<!--     
     <style>
         #pagination-container{
             position: fixed;
@@ -27,11 +27,16 @@
         #pagination-container button:hover{
             background-color: #ff9900;
         }
+    </style> -->
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
     </style>
-
 </head>
 <body>
-    <div id="container">
+    <!-- <div id="container">
 
     </div>
     <div id="pagination-container">
@@ -39,9 +44,19 @@
     
 
 
-    </div>
+    </div> -->
+    <div class="container">
 
-    
+        <form action="">
+            
+            <label>Email:</label><input id="email" type="text">
+            <label>Name:</label><input id="name" type="text">
+            <label>Paswword</label><input id="pass" type="text">
+            <label>Username</label><input id="user" type="text">
+            <input id="dugme" type="submit">
+        </form>
+    </div>
+        
     <script src="JS56.js"></script>
 </body>
 </html>
