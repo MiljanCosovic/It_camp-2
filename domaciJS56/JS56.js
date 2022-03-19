@@ -79,18 +79,18 @@
 // fetchData();
 
 var email=document.getElementById("email")
-var namer=document.getElementById("name")
-var passw=document.getElementById("pass")
-var usern=document.getElementById("user")
+var name=document.getElementById("name")
+var password=document.getElementById("pass")
+var usernusername=document.getElementById("user")
 let dugme = document.querySelector("#dugme")
 dugme.addEventListener('click', (e) => {
   e.preventDefault();
   // console.log({email,namer,passw,usern});
   const user = {
     email : e.target.form[0].value,
-    namer : e.target.form[1].value,
-    passw : e.target.form[2].value,
-    user : e.target.form[3].value,
+    name : e.target.form[1].value,
+    password : e.target.form[2].value,
+    username : e.target.form[3].value,
     
   }
   console.log(user);
