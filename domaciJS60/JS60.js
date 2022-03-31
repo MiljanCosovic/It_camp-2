@@ -1,14 +1,14 @@
 var niz1 = [3,11,2,45,2,1234,2,3];
 var niz2 = ["oke",33354,"java", "script"];
-var niz= niz1.entries(niz2)
-console.log(niz);
+// var niz= niz1.entries(niz2)
+// console.log(niz);
 
-// function proveri(god)
-// {
-//     return god > 18
-// }
+function proveri(god)
+{
+    return god > 18
+}
 
-// console.log(niz1.every(proveri));
+console.log(niz1.every(proveri));
 
 
 // niz1.fill("oke",0,4);
