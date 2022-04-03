@@ -11,7 +11,7 @@ var niz2 = ["oke",33354,"java", "script"];
 // console.log(niz1.every(proveri));
 
 
-niz1.fill("oke",0,4);
+niz1.fill("oke",0,4,5);
 console.log(niz1);
 
 
