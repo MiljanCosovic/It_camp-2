@@ -11,20 +11,20 @@ var niz2 = ["oke",33354,"java", "script"];
 // console.log(niz1.every(proveri));
 
 
-niz1.fill("oke",0,4,5);
-console.log(niz1);
+// niz1.fill("oke",0,4,5);
+// console.log(niz1);
 
 
-// pom =niz1.filter(( el,index) => niz1.indexOf(el) === index )
-// console.log(pom);
+pom =niz1.filter(( el,index) => niz1.indexOf(el) === index )
+console.log(pom);
 
 
-// function getMostFrequent(arr) {
-//     const hashmap = arr.reduce( (acc, val) => {
-//      acc[val] = (acc[val] || 0 ) + 1
-//      return acc
-//   },{})
-//  console.log(Object.keys(hashmap).reduce((a, b) => hashmap[a] > hashmap[b] ? a : b)); 
-//  }
+function getMostFrequent(arr) {
+    const hashmap = arr.reduce( (acc, val) => {
+     acc[val] = (acc[val] || 0 ) + 1
+     return acc
+  },{})
+ console.log(Object.keys(hashmap).reduce((a, b) => hashmap[a] > hashmap[b] ? a : b)); 
+ }
 
-//  getMostFrequent([1,44,2,11,2,4,2])
+ getMostFrequent([1,44,2,11,2,4,2])
