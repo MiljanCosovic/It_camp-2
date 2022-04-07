@@ -27,4 +27,4 @@ function getMostFrequent(arr) {
  console.log(Object.keys(hashmap).reduce((a, b) => hashmap[a] > hashmap[b] ? a : b)); 
  }
 
- getMostFrequent([1,44,2,11,2,4,2,4])
+ getMostFrequent([1,44,2,11,2,4,2,1,4])
