@@ -85,7 +85,15 @@
 
 // fetchData()
 
-
+function patern(n){
+    var red = 1
+    for (var i = 2; i <= n; i++) {
+        red += "\n" + 1 + Array(i).join("*") + i
+    }
+    return red;
+    
+}
+console.log(patern(10));
 
 
 
