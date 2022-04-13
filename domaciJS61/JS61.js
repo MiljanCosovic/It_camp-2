@@ -75,7 +75,7 @@ paginacija.style.display="flex";
 paginacija.style.flexDirection="row";
 paginacija.style.alignItem="center";
 paginacija.style.justifyContent="center";
-paginacija.style.gap="5px";
+paginacija.style.gap="7px";
 
 fetchData();
 
