@@ -85,15 +85,35 @@
 
 // fetchData()
 
-function patern(n){
-    var red = 1
-    for (var i = 2; i <= n; i++) {
-        red += "\n" + 1 + Array(i).join("*") + i
-    }
-    return red;
+// function patern(n){
+//     var red = 1
+//     for (var i = 2; i <= n; i++) {
+//         red += "\n" + 1 + Array(i).join("*") + i
+//     }
+//     return red;
     
+// }
+// console.log(patern(10));
+
+
+
+function matrix(n, m){
+    var a = ""
+    for (var i = 0; i < n; i++) {
+        for (var j = 0; j < m; j++) {
+            a += i+j
+        }
+        console.log(a)
+        a=""
+    }
 }
-console.log(patern(10));
+function transponovana(n, m){
+    [n,m]=[m,n]
+    matrix(n,m)
+}
+matrix(5, 3)
+console.log("==================")
+transponovana(5, 3)
 
 
 
