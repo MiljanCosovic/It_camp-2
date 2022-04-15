@@ -113,7 +113,7 @@ function transponovana(n, m){
 }
 matrix(5, 3)
 console.log("==================")
-transponovana(5, 3)
+transponovana(3, 2)
 
 
 
