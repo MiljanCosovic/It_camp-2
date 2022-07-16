@@ -1,8 +1,13 @@
-const card = () =>{
-    return <div style={{border:"1px solid red",background:"lightblue", margin:"10px"}}>
-         <h1>Ovo je paragraf</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, quo distinctio repellendus aliquid corrupti aliquam praesentium illo. Autem atque, iure ea quibusdam nam dolor quam asperiores cumque harum eligendi rerum.</p>
+const Card = () =>{
+    return <div>
+         <div className="card">
+      <p>Nesto</p>
+      <div>
+        <button className="check">check</button>
+        <button className="delete">delete</button>
+      </div>
+    </div>
     </div>
 }
 
-export default card
+export default Card
